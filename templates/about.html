@@ -1,14 +1,17 @@
 <!DOCTYPE html>
 <html lang="en">
     <head>
+        <link rel="stylesheet" href="{{ url_for('static', filename='css/app.css') }}" /> 
         <meta charset="UTF-8">
         <title>My Website - About</title>
     </head>
     <body>
         <h1>Teric Simons</h1>
-        <p>My name is Teric Simons.I am currently a second year Computer Science student and the University of The West Indies.My hobbies 
-            include playing games and coding.My core languages are Python and Java.
+        <p>My name is Teric Simons. I am second-year computer science student at the University of the West Indies. My hobbies include playing video games and coding. 
+            <br>Python and Java are my primary programming languages.
         </p>
+
+        <img src="{{ url_for('static', filename='ranimage.jpg') }}" alt="robotic guy with screen">
     </body>
 
 </html>
